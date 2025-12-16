@@ -1,7 +1,5 @@
 const express = require("express");
-const axios = require("axios");
 const { v4: uuidv4 } = require("uuid");
-const nodemailer = require("nodemailer");
 
 const app = express();
 const port = 3001;
