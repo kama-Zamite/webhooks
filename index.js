@@ -1,10 +1,19 @@
 const express = require("express");
-const axios = require("axios");
 const { v4: uuidv4 } = require("uuid");
-const nodemailer = require("nodemailer");
 
 const app = express();
 const port = 3001;
+
+// Middleware CORS para permitir requisições do frontend React
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  }
+  next();
+});
 
 app.use(express.json());
 
