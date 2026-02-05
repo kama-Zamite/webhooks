@@ -1,0 +1,42 @@
+.notas-page {
+  padding: 0;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filters svg {
+  color: #667eea;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.disciplina-cell {
+  font-weight: 500;
+  color: #333;
+}
+
+.nota-baixa {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.nota-final {
+  font-weight: 600;
+  font-size: 16px;
+}

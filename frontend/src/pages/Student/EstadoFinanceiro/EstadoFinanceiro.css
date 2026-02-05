@@ -1,0 +1,45 @@
+.estado-financeiro {
+  padding: 0;
+}
+
+.payment-desc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-icon.success {
+  color: #10b981;
+}
+
+.status-icon.warning {
+  color: #f59e0b;
+}
+
+.status-icon.info {
+  color: #667eea;
+}
+
+.valor {
+  font-weight: 600;
+  color: #333;
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #e0e0e0;
+  color: #333;
+}
