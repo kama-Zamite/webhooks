@@ -1,0 +1,168 @@
+.plano-curricular-page {
+  padding: 0;
+}
+
+.progress-card {
+  margin-bottom: 30px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.progress-header h3 {
+  margin: 0;
+  color: #1e1e2f;
+}
+
+.progress-text {
+  color: #666;
+  font-size: 14px;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.progress-percentage {
+  font-size: 14px;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.ano-section {
+  margin-bottom: 30px;
+}
+
+.ano-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #1e1e2f;
+  font-size: 20px;
+}
+
+.ano-titulo svg {
+  color: #667eea;
+}
+
+.semestres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.semestre-card {
+  padding: 25px;
+}
+
+.semestre-titulo {
+  margin: 0 0 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+  color: #1e1e2f;
+  font-size: 18px;
+}
+
+.disciplinas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.disciplina-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.disciplina-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.disciplina-nome {
+  font-size: 14px;
+  color: #333;
+}
+
+.disciplina-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.creditos {
+  font-size: 12px;
+  color: #888;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.status-concluido {
+  color: #10b981;
+}
+
+.status-em-curso {
+  color: #f59e0b;
+}
+
+.status-pendente {
+  color: #9ca3af;
+}
+
+.status-badge.status-concluido {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-badge.status-em_curso {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-badge.status-pendente {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .semestres-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .disciplina-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .disciplina-meta {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
